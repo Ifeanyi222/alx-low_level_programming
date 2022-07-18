@@ -7,14 +7,14 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int r, sum_1 = 0, sum_2 = 0;
+	int i, sum1 = 0, sum2 = 0;
 
-	for (r = 0; r < (size * size); r++)
+	for (i = 0; i < (size * size); i++)
 	{
-		if (r % (size + 1) == 0)
-			sum_1 += *(a + r);
-		if (r % (size - 1) == 0 && r != 0 && r < size * size - 1)
-			sum_2 += *(a + r);
+		if (i % (size + 1) == 0)
+			sum1 += *(a + i);
+		if (i % (size - 1) == 0 && i != 0 && i < size * size - 1)
+			sum2 += *(a + i);
 	}
-	printf("%d, %d\n", sum_1, sum_2);
+	printf("%d, %d\n", sum1, sum2);
 }
