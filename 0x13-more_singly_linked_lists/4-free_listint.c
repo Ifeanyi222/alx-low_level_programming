@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * free_listint - that frees a linked list
+ * free_listint - frees a linked list
+ * @head: head of a list.
  *
- * Return: no
+ * Return: no return.
  */
 void free_listint(listint_t *head)
 {
