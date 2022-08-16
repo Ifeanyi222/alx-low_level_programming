@@ -1,10 +1,11 @@
 #include "lists.h"
 
 /**
- * listint_len - that returns the number of elements in
+ * listint_len - returns the number of elements in
  * a linked list.
+ * @h: head of a list.
  *
- * Return: the numbers of nodes.
+ * Return: numbers of nodes.
  */
 size_t listint_len(const listint_t *h)
 {
